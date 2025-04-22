@@ -19,3 +19,12 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1200,
     loop: true
   });
+
+  function Readmore() {
+    var x = document.getElementById("span2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }

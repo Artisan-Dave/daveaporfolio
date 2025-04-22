@@ -226,6 +226,11 @@ span {
     margin:2rem 0 3rem;
 }
 
+#span2 {
+    display: none;
+    color: var(--text-color);
+}
+
 /* Services section code */
 
 .services h2{
