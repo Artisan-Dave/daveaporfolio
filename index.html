@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Dave P. Almadin - Portfolio</title>
 </head>
 
@@ -36,13 +37,17 @@
             <h3>Hello there!</h3>
             <h1>Dave P. Almadin</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>A self-driven developer. I’ve been spending my time building personal projects, learning new tech, and preparing to take on real-world challenges. Feel free to check out what I’ve been working on!</p>
+            <p>A self-driven developer. I’ve been spending my time building personal projects, learning new tech, and
+                preparing to take on real-world challenges. Feel free to check out what I’ve been working on!</p>
             <div class="social-media">
-                <a href="www.linkedin.com/in/dave-almadin-9bb957310"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Artisan-Dave"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="https://www.linkedin.com/in/dave-almadin-9bb957310" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Artisan-Dave" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/dave.almadin.012815" target="_blank"><i
+                        class='bx bxl-facebook-square'></i></a>
             </div>
-            <a href="files/CV-ALMADIN-DAVE-P.pdf" download="" class="btn">Download CV <i class='bx bxs-download'></i></a>
+            <a href="files/CV-ALMADIN-DAVE-P.pdf" download="" class="btn">Download CV <i
+                    class='bx bxs-download'></i></a>
         </div>
     </section>
 
@@ -52,8 +57,20 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>I'm a <span>Web Developer</span></h3>
-            <p>I am a passionate and dedicated individual who recently graduated from Bulacan State University with a Bachelor of Science degree in Information Technology. While I currently do not have any clients, I am fully focused on honing my skills through personal projects and continuously improving my portfolio. I take pride in being a hardworking person with a strong habit of completing tasks ahead of deadlines, often finishing them a day early. I am also a reliable team player who values collaboration and open communication. <span id="span2"> My eagerness to learn and grow in the tech industry drives me to explore new tools, stay updated with the latest trends, and challenge myself with every project I work on. I am excited about the opportunities that lie ahead and look forward to contributing meaningfully in a professional setting.</span></p>
-            <button onclick="Readmore()" class="btn">Read More</button>
+            <p>I am a passionate and dedicated individual who recently graduated from Bulacan State University with a
+                Bachelor of Science degree in Information Technology. While I currently do not have any clients, I am
+                fully focused on honing my skills through personal projects and continuously improving my portfolio. I
+                take pride in being a hardworking person with a strong habit of completing tasks ahead of deadlines,
+                often finishing them a day early. I am also a reliable team player who values collaboration and open
+                communication.
+            </p>
+            <p id="p2-about" style="display: none;"> My eagerness to learn and grow in the tech industry drives me to explore new tools, stay
+                updated with the latest trends, and challenge myself with every project I work on. I am excited about
+                the opportunities that lie ahead and look forward to contributing meaningfully in a professional
+                setting.
+            </p>
+            
+            <button class="btn" id="rm-about" onclick="setupToggle">Read More</button>
         </div>
         <div class="about-img">
             <img src="assets/profile.jpg" alt="About Image">
@@ -69,17 +86,21 @@
             <div class="services-box">
                 <i class="bx bx-code"></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde quos iusto? Cupiditate hic
-                    deserunt impedit quia numquam odio praesentium iste voluptate laudantium! Quibusdam, sunt?</p>
-                <a href="#" class="btn">Read More</a>
+                <p>I specialize in developing responsive, user-friendly websites—both as personal projects and for
+                    clients. Whether you're a business owner looking to establish an online presence or someone in need
+                    of a custom web solution, with affordable price range, I'm open to working with you.</p>
+                <p id="p2-services" style="display: none;">I build with reliable technologies, ensuring smooth performance and clean design. From simple landing pages to more complex web applications, I focus on delivering
+                high-quality code, efficient functionality, and a great user experience. Let’s bring your ideas to life!
+                </p>
+                <button class="btn" id="rm-services" onclick="setupToggle">Read More</button>
             </div>
 
             <div class="services-box">
                 <i class="bx bxl-android"></i>
                 <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde quos iusto? Cupiditate hic
-                    deserunt impedit quia numquam odio praesentium iste voluptate laudantium! Quibusdam, sunt?</p>
-                <a href="#" class="btn">Read More</a>
+                <p>I create custom Android applications that are user-friendly, visually appealing, and built to match your specific goals. Whether you need an app for your business, a personal project, or a unique idea, I offer a complete development service—from planning and design to launch and ongoing support.</p>
+                <p id="p2-services2" style="display: none;">Every app is crafted with attention to detail, smooth performance, and a focus on providing a great user experience. Best of all, I offer these services at an affordable price range, making professional-quality apps accessible without breaking the bank.</p>
+                <button class="btn" id="rm-services2">Read More</button>
             </div>
 
         </div>
@@ -95,11 +116,10 @@
 
                     <h2>Smart Waste Management System</h2>
                     <div class="description">
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
+                        <i class="devicon-androidstudio-plain" id="techstack"></i>
+                        <i class="devicon-java-plain" id="techstack"></i>
+                        <i class="devicon-arduino-plain" id="techstack"></i>
+                        <i class="devicon-cplusplus-plain" id="techstack"></i>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nesciunt! Eligendi saepe
                         cum sapiente alias distinctio atque libero, ex, rem reiciendis officia veniam pariatur amet?</p>
@@ -110,11 +130,10 @@
 
                     <h2>Bridgehope Payment Tracking System</h2>
                     <div class="description">
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
+                        <i class="devicon-laravel-original" id="techstack"></i>
+                        <i class="devicon-mysql-original" id="techstack"></i>
+                        <i class="devicon-tailwindcss-original" id="techstack"></i>
+                        <i class='bx bxl-gmail' id="techstack"></i>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nesciunt! Eligendi saepe
                         cum sapiente alias distinctio atque libero, ex, rem reiciendis officia veniam pariatur amet?</p>
@@ -123,7 +142,7 @@
         </div>
     </section>
 
-    <!-- Contact Section --> 
+    <!-- Contact Section -->
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
@@ -148,9 +167,11 @@
 
     <footer class="footer">
         <div class="social">
-            <a href="www.linkedin.com/in/dave-almadin-9bb957310"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Artisan-Dave"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.linkedin.com/in/dave-almadin-9bb957310" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Artisan-Dave" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/dave.almadin.012815" target="_blank"><i
+                    class='bx bxl-facebook-square'></i></a>
 
         </div>
         <p class="copyright">

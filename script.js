@@ -1,6 +1,7 @@
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.nav-bar');
 
+
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -20,11 +21,23 @@ const typed = new Typed('.multiple-text', {
     loop: true
   });
 
-  function Readmore() {
-    var x = document.getElementById("span2");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
+  function setupToggle(buttonId, textId) {
+    const button = document.getElementById(buttonId);
+    const text = document.getElementById(textId);
+  
+    if (button && text) {
+      button.addEventListener('click', () => {
+        const isHidden = text.style.display === 'none' || text.style.display === '';
+        
+        text.style.display = isHidden ? 'block' : 'none';
+        button.textContent = isHidden ? 'Read Less' : 'Read More';
+      });
     }
   }
+  
+  // Call the function for each pair
+  setupToggle('rm-about', 'p2-about');
+  setupToggle('rm-services', 'p2-services');
+  setupToggle('rm-services2', 'p2-services2');
+
+
