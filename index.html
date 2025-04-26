@@ -64,7 +64,7 @@
                 often finishing them a day early. I am also a reliable team player who values collaboration and open
                 communication.
             </p>
-            <p id="p2-about" style="display: none;"> My eagerness to learn and grow in the tech industry drives me to explore new tools, stay
+            <p id="p-about" style="display: none;"> My eagerness to learn and grow in the tech industry drives me to explore new tools, stay
                 updated with the latest trends, and challenge myself with every project I work on. I am excited about
                 the opportunities that lie ahead and look forward to contributing meaningfully in a professional
                 setting.
@@ -89,7 +89,7 @@
                 <p>I specialize in developing responsive, user-friendly websites—both as personal projects and for
                     clients. Whether you're a business owner looking to establish an online presence or someone in need
                     of a custom web solution, with affordable price range, I'm open to working with you.</p>
-                <p id="p2-services" style="display: none;">I build with reliable technologies, ensuring smooth performance and clean design. From simple landing pages to more complex web applications, I focus on delivering
+                <p id="p-services" style="display: none;">I build with reliable technologies, ensuring smooth performance and clean design. From simple landing pages to more complex web applications, I focus on delivering
                 high-quality code, efficient functionality, and a great user experience. Let’s bring your ideas to life!
                 </p>
                 <button class="btn" id="rm-services" onclick="setupToggle">Read More</button>
@@ -99,7 +99,7 @@
                 <i class="bx bxl-android"></i>
                 <h3>App Development</h3>
                 <p>I create custom Android applications that are user-friendly, visually appealing, and built to match your specific goals. Whether you need an app for your business, a personal project, or a unique idea, I offer a complete development service—from planning and design to launch and ongoing support.</p>
-                <p id="p2-services2" style="display: none;">Every app is crafted with attention to detail, smooth performance, and a focus on providing a great user experience. Best of all, I offer these services at an affordable price range, making professional-quality apps accessible without breaking the bank.</p>
+                <p id="p-services2" style="display: none;">Every app is crafted with attention to detail, smooth performance, and a focus on providing a great user experience. Best of all, I offer these services at an affordable price range, making professional-quality apps accessible without breaking the bank.</p>
                 <button class="btn" id="rm-services2">Read More</button>
             </div>
 
@@ -121,8 +121,16 @@
                         <i class="devicon-arduino-plain" id="techstack"></i>
                         <i class="devicon-cplusplus-plain" id="techstack"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nesciunt! Eligendi saepe
-                        cum sapiente alias distinctio atque libero, ex, rem reiciendis officia veniam pariatur amet?</p>
+                    <p>The system combines android mobile application and arduino embedded system to monitor trash level real-time.
+                        <br>Tech Stacks: <span>Android Studio (Java), Firebase (Real-time Database), Arduino IDE (C++)</span>
+                    </p>
+                    <p id="p-projects" style="display: none;">
+                        The NodeMCU integrated with arduino uploads trash level to real-time database inside the trashbin.
+                        The android app notifies the collectors using app notifications and sms, while the trashbin has visible led lights
+                        for trash level on the trashbin lid even if it's offline.
+                    </p>
+                    <button id="rm-projects" class="btn">Read More</button>
+                    
                 </div>
 
                 <div class="projects-item">
@@ -151,12 +159,12 @@
 
             <div class="input-box">
                 <input type="hidden" name="access_key" value="16ec3201-ba42-4368-96e2-d118a94c0e53">
-                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Full Name">
                 <input type="email" name="Email" placeholder="Email" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone Number" required>
-                <input type="text" placeholder="Email Subject" required>
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
             </div>
             <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">

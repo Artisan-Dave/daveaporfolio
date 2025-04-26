@@ -36,8 +36,9 @@ const typed = new Typed('.multiple-text', {
   }
   
   // Call the function for each pair
-  setupToggle('rm-about', 'p2-about');
-  setupToggle('rm-services', 'p2-services');
-  setupToggle('rm-services2', 'p2-services2');
+  setupToggle('rm-about', 'p-about');
+  setupToggle('rm-services', 'p-services');
+  setupToggle('rm-services2', 'p-services2');
+  setupToggle('rm-projects', 'p-projects');
 
 
