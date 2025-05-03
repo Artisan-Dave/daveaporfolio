@@ -302,7 +302,7 @@ span {
 
 .projects-item {
     min-height: 450px;
-    max-width: 350px;
+    max-width: 500px;
     background: var(--bg-color);
     border: 0.3rem solid var(--bg-color);
     border-radius: 2rem;
